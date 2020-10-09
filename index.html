@@ -7,10 +7,17 @@
   <body>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script>
-      //* Use select() to select an HTML node,
+      //* Use select() to select the first HTML node of that kind,
       //* use append() to append an HTML node to the selected one,
       //* use text() to change the text to the selected HTML node
       d3.select("body").append("h1").text("Learning D3");
+      //* selectAll() select all the HTML node of the same kind
+      d3.selectAll("li").text("list item");
     </script>
+    <ul>
+      <li>Example</li>
+      <li>Example</li>
+      <li>Example</li>
+    </ul>
   </body>
 </html>
