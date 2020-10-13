@@ -13,6 +13,14 @@
       d3.select("body").append("h1").text("Learning D3");
       //* selectAll() select all the HTML node of the same kind
       d3.selectAll("li").text("list item");
+      //* Create items based on data
+      const dataset = ["a", "b", "c"];
+      d3.select("ul")
+        .selectAll("li")
+        .data(dataset)
+        .enter()
+        .append("li")
+        .text("New item");
     </script>
     <ul>
       <li>Example</li>
